@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dogs List</title>
+  <meta name="description" content="Dogs List">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+  			<div class="box-header">
+
+<h1> List of dogs </h1>
+
+<ul>
+<% @dogs.each do |dog| %>
+<li><%= link_to dog.name, dog_path(dog) %></li>
+<% end %>
+</ul>
+
+</div>
+</div>
+</body>

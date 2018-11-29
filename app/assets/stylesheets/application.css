@@ -13,3 +13,233 @@
  *= require_tree .
  *= require_self
  */
+
+ /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font-size: 1.2em;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	margin: 0;
+	background-color: #1C1C1C;
+}
+
+/* Typography */
+h1#title {
+	font-family: 'Lobster', cursive;
+	font-weight: 300;
+	font-size: 3.2em;
+	color: white;
+	text-shadow: 0 0 10px rgba(0,0,0,0.8);
+	margin: 0 auto;
+	padding-top: 180px;
+	max-width: 300px;
+	text-align: center;
+	position: relative;
+	top: 0px;
+}
+
+h1#title span span {
+	font-weight: 400;
+}
+
+h1 { text-transform: uppercase; }
+
+h1, h2, h3, h4 {
+  font-family: 'Lobster', cursive;
+	color: white;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-size: 2em;
+	line-height: 3em;
+}
+
+h2 {
+  font-size: 1.6em;
+	line-height: 2em;
+}
+
+h3 {
+  font-size: 1.4em;
+	line-height: 1.8em;
+}
+
+h4 {
+  font-size: 1.2em;
+	line-height: 1.6em;
+}
+
+a {
+	margin: 0.2em auto;
+  display: block;
+	text-decoration: none;
+	color: #ededed;
+}
+
+a:hover {
+	color: #aeaeae;
+}
+
+p.small {
+	font-size: 0.8em;
+	margin: 20px 0 0;
+}
+
+
+/* Layout */
+
+.top {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	top: 80px;
+	padding-bottom: 30px;
+	border-radius: 5px;
+	box-shadow: 0 5px 50px rgba(0,0,0,0.4);
+	text-align: center;
+}
+
+.container .box-header {
+	background-color: #353535;
+	margin-top: 0;
+	border-radius: 10px;
+  padding: 1em;
+}
+
+.container label {
+	font-weight: 700;
+	font-size: .8em;
+	color: #888;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	line-height: 2em;
+}
+
+.container input {
+	margin-bottom: 20px;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	font-size: .9em;
+	color: #888;
+}
+
+.container input:focus {
+	outline: none;
+	border-color: #665851;
+	transition: 0.5s;
+	color: #665851;
+}
+
+.container input[type="submit"] {
+	margin-top: 0px;
+	border: 0;
+	border-radius: 2px;
+	color: white;
+	padding: 10px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 0.7em;
+	letter-spacing: 1px;
+	background-color: #665851;
+	cursor:pointer;
+	outline: none;
+}
+
+.container input[type="submit"]:hover {
+	opacity: 0.7;
+	transition: 0.5s;
+}
+
+.container input[type="submit"]:hover {
+	opacity: 0.7;
+	transition: 0.5s;
+}
+
+.selected {
+	color: #665851!important;
+	transition: 0.5s;
+}
+
+ .image-cropper {
+     width: 300px;
+     height: 300px;
+     position: relative;
+     overflow: hidden;
+     border-radius: 50%;
+     margin: 1em auto;
+ }
+
+ img {
+  margin: 0 auto;
+  /* margin-left: -35%; */
+  height: 100%;
+  width: auto;
+}
+
+ul { padding: 1em 0 3em 0; }
+
+ul li a {
+  color: #fff;
+    font-size: 1.5em;
+    line-height: 2em;
+}

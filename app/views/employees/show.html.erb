@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Show Employee</title>
+  <meta name="description" content="Show Employee">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+  			<div class="box-header">
+
+<h1> <%= @employee.full_name %></h1>
+
+<h2>Alias: <%= @employee.alias %></h2>
+<h2>Title: <%= @employee.title %></h2>
+<h2>Office: <%= @employee.office %></h2>
+<h2>Dogs associated: <%= @employee.dog.name %></h2>
+
+<div class="image-cropper">
+  <img src=<%=@employee.img_url%>>
+</div>
+
+<%= link_to("Edit this employee", edit_employee_path(@employee)) %><br>
+<%= link_to "Go back to the employees list", employees_path %>
+
+</div>
+</div>
+</body>

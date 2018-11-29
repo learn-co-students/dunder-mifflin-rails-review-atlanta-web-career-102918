@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Employee List</title>
+  <meta name="description" content="Dunder Mifflin Employee List Page">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+  			<div class="box-header">
+    <h1> List of all the Employees </h1>
+
+    <ul>
+      <% @employees.each do |employee| %>
+      <li><%= link_to employee.full_name, employee_path(employee) %></li>
+      <% end %>
+      </ul>
+  </div>
+  </div>
+
+</body>
+</html>

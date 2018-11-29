@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dogs List</title>
+  <meta name="description" content="Dogs List">
+</head>
+
+<body>
+
+  <div class="container">
+  			<div class="box-header">
+
+<h1> <%= @dog.name %></h1>
+
+<h3> <%=@dog.name%> is a <%=@dog.breed%> and is <%= @dog.age %>. </h3>
+
+
+<h4>Employee(s) associated with this dog:</h4>
+<% @dog.employees.each do |employee| %> <br>
+<p><%= employee.first_name %></p>
+<% end %> <br>
+
+<div class="image-cropper">
+  <img src=<%=@dog.img_url%>>
+</div>
+
+
+<%= link_to "Go back to the dogs list", dogs_path %>
+
+</div>
+</div>
+</body>
