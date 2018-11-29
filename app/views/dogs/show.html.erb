@@ -18,9 +18,9 @@
 
 
 <h4>Employee(s) associated with this dog:</h4>
-<% @dog.employees.each do |employee| %> <br>
+<% @dog.employees.each do |employee| %>
 <p><%= employee.first_name %></p>
-<% end %> <br>
+<% end %>
 
 <div class="image-cropper">
   <img src=<%=@dog.img_url%>>
