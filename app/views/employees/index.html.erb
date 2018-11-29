@@ -19,8 +19,9 @@
       <li><%= link_to employee.full_name, employee_path(employee) %></li>
       <% end %>
       </ul>
-  </div>
-  </div>
 
+      <%= link_to("Create a new employee", new_employee_path(@employee)) %><br>
+    </div><!-- box-header -->
+ </div><!-- container -->
 </body>
 </html>
